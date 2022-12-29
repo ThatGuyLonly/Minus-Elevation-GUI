@@ -2,6 +2,8 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("Minus Elevation GUI - made by new lonly#6825", "Midnight")
 
 --MAIN
+local Changelogs = Window:NewTab("Changelogs")
+local Changelogs = Changelogs:NewSection("Changelogs")
 local Main = Window:NewTab("Main")
 local Experimental = Window:NewTab("Experimental no work")
 local Experimental = Experimental:NewSection("EXPERIMENTALL")
@@ -11,6 +13,9 @@ local ESP = Window:NewTab("ESP")
 local ESP = ESP:NewSection("Scripts")
 local MainSection = Main:NewSection("Scripts")
 local OtherSection = Main:NewSection("Infinite Yeild")
+
+Changelogs:NewLabel("Added ESP/Chams")
+Changelogs:NewLabel("Added Experimental tab")
 
 ESP:NewButton("Button Chams", "Shows Button Locations", function()
     function update()
